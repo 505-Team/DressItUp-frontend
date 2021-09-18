@@ -1,4 +1,4 @@
-# Dress it Up
+# World Of Art Frontend
 
 # 505-Team
 
@@ -14,4 +14,4 @@
 
 
 ### Problem Domain:
--Its hard to find fitting cloths in most of places, and our web application helps you target and find whatever fits your taste in easy and fast way.
+-UPDATING SOON
