@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Figure, Image, Container, Col, Row, Carousel } from 'react-bootstrap';
+import {Figure,Image} from 'react-bootstrap';
 import './Aboutus.css';
 
 class Aboutus extends React.Component {
