@@ -7,6 +7,10 @@ import Profile from './T-components/Profile';
 import Favorites from './T-components/Favorites';
 import { withAuth0 } from '@auth0/auth0-react';
 import Paint from './T-components/Paint';
+import PostPainting from './M-Components/Postpainting';
+import StorePage from './assets/components/StorePage';
+import Aboutus from './E-Components/Aboutus';
+import './App.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,15 +32,22 @@ class App extends React.Component {
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
                 {isAuthenticated ? <Favorites/>: <Login/>}
+                <Paint/>
               </Route>
               {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
               <Route exact path="/Profile">
-
                 <Profile/>
-
+              </Route>
+              <Route exact path="/PostPainting">
+                {isAuthenticated&&<PostPainting/>}
+              </Route>
+              <Route exact path="/StorePage">
+                <StorePage/>
+              </Route>
+              <Route exact path="/Aboutus">
+                <Aboutus/>
               </Route>
             </Switch>
-            <Paint/>
             <Footer />
           {/* </IsLoadingAndError> */}
         </Router>

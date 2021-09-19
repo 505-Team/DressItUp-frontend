@@ -29,9 +29,8 @@ class Postpainting extends React.Component {
 
   componentDidMount = () => {
     const { user } = this.props.auth0;
-    const email = user.email;
     axios
-      .get(`http://localhost:3010/getPainting?email=${email}`)
+      .get(`http://localhost:3010/getPainting?email=${user.email}`)
       .then(result => {
         this.setState({
           paintArr: result.data

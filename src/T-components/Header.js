@@ -15,10 +15,11 @@ class Header extends React.Component {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand>World of Art</Navbar.Brand>
         <Link to="/" id="link">Home</Link>
-        <Link to="/" id="link">Gallery & Store</Link>
+        <Link to="/StorePage" id="link">Gallery & Store</Link>
         <Link to="/" id="link">Favorites</Link>
-        <Link to="/profile" id="link">Profile</Link>
-        <Link to="/" id="link">About Us</Link>
+        {isAuthenticated&&<Link to="/profile" id="link">Profile</Link>}
+        <Link to="/Aboutus" id="link">About Us</Link>
+        {isAuthenticated&&<Link to="/PostPainting" id="link">Post Painting</Link>}
       
 
         {isAuthenticated && <LogoutButton/> }
