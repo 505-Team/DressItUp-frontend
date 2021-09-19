@@ -83,17 +83,9 @@ class Footer extends React.Component {
                     Products
                   </h6>
                   <p>
-                    <a href="#!" className="text-reset">Angular</a>
+                    Paintings
                   </p>
-                  <p>
-                    <a href="#!" className="text-reset">React</a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">Vue</a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">Laravel</a>
-                  </p>
+                  
                 </div>
                 {/* <!-- Grid column --> */}
 
@@ -104,16 +96,10 @@ class Footer extends React.Component {
                     Useful links
                   </h6>
                   <p>
-                    <a href="#!" className="text-reset">Pricing</a>
+                    <a href="#!" className="text-reset">Gallery & Store</a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">Settings</a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">Orders</a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">Help</a>
+                    <a href="#!" className="text-reset">About Us</a>
                   </p>
                 </div>
                 {/* <!-- Grid column --> */}
@@ -124,13 +110,12 @@ class Footer extends React.Component {
                   <h6 className="text-uppercase fw-bold mb-4">
                     Contact
                   </h6>
-                  <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                  <p><i className="fas fa-home me-3"></i> Amman, Jordan</p>
                   <p>
                     <i className="fas fa-envelope me-3"></i>
-                    info@example.com
+                    info@worldofArt.com
                   </p>
                   <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                  <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
                 </div>
                 {/* <!-- Grid column --> */}
               </div>
@@ -141,8 +126,7 @@ class Footer extends React.Component {
 
           {/* <!-- Copyright --> */}
           <div className="text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-            © 2021 Copyright:
-            <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            © 2021 Copyright: World of Art.
           </div>
           {/* <!-- Copyright --> */}
         </footer>
