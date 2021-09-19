@@ -1,5 +1,11 @@
+.loginButtonstyle {
+float:right;
+}
+
 a{
     color:#fff;
+    text-decoration: none;
+
   }
 
 a:hover{
@@ -10,3 +16,9 @@ a:hover{
   color:white;
   margin-left: 100px;
 }
+
+.logoDesign{
+  width: 8%;
+  height: 8%;
+}
+
