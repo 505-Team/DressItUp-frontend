@@ -7,7 +7,6 @@ import Profile from './T-components/Profile';
 import Favorites from './T-components/Favorites';
 import { withAuth0 } from '@auth0/auth0-react';
 import Paint from './T-components/Paint';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +16,7 @@ import {
 class App extends React.Component {
 
   render() {
+
     console.log('app', this.props);
     const { isAuthenticated } = this.props.auth0;
     return (
@@ -44,5 +44,5 @@ class App extends React.Component {
     );
   }
 }
-
 export default withAuth0(App);
+
