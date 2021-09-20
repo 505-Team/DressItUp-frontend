@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.css';
 
 // import Navbar from 'react-bootstrap/Navbar';
 
@@ -13,7 +14,7 @@ class Footer extends React.Component {
       // </Navbar>
       <>
         {/* // < !--Footer -- > */}
-        <footer className="text-center text-lg-start bg-light text-muted">
+        <footer className="footerstyle" >
           {/* <!-- Section: Social media --> */}
           <section
             className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"

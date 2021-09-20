@@ -17,18 +17,6 @@ class UpdatePaint extends Component {
 
                     <Modal.Body>
                         <Form onSubmit={this.props.updatePainting} >
-                            <Form.Group className="mb-5" >
-                                <Form.Label>The title of the paint</Form.Label>
-                                <Form.Control type="text" name="title" defaultValue={this.props.title} />
-
-                            </Form.Group>
-
-                            <Form.Group className="mb-5" >
-                                <Form.Label>Painter name</Form.Label>
-                                <Form.Control type="text" name="painter" defaultValue={this.props.painter} />
-
-                            </Form.Group>
-
 
                             <Form.Group className="mb-5" >
                                 <Form.Label>Image of the paint</Form.Label>
@@ -37,14 +25,36 @@ class UpdatePaint extends Component {
 
 
                             <Form.Group className="mb-5" >
-                                <Form.Label>Description of the paint</Form.Label>
+                                <Form.Label>The title of the painting</Form.Label>
+                                <Form.Control type="text" name="title" defaultValue={this.props.title} />
+
+                            </Form.Group>
+
+
+                            <Form.Group className="mb-5" >
+                                <Form.Label>Description of the painting</Form.Label>
                                 <Form.Control type="text" name="description" defaultValue={this.props.description} />
                             </Form.Group>
-                            <Form.Group className="mb-5" >
 
+                            <Form.Group className="mb-5" >
+                                <Form.Label>Date</Form.Label>
+                                <Form.Control type="text" name="painter" defaultValue={this.props.painter} />
+                            </Form.Group>
+
+
+
+
+                            <Form.Group className="mb-5" >
                                 <Form.Label>Place of origin</Form.Label>
                                 <Form.Control type="text" name="status" defaultValue={this.props.status} />
                             </Form.Group>
+
+                            <Form.Group className="mb-5" >
+                                <Form.Label>Artist Display</Form.Label>
+                                <Form.Control type="text" name="artistDisplay" defaultValue={this.props.artistDisplay} />
+                            </Form.Group>
+
+
                             <Button variant="primary" type="submit">
                                 Update paint information
                             </Button>

@@ -18,6 +18,8 @@ import {
   Route
 } from "react-router-dom";
 import LoginButton from './T-components/LoginButton';
+import FactCard from './T-components/FactCard';
+// import Card from './T-components/Card'
 
 class App extends React.Component {
 
@@ -28,30 +30,34 @@ class App extends React.Component {
     const { user } = this.props.auth0;
     return (
       <>
+
         <Router>
           {/* <IsLoadingAndError> */}
-            <Header />
-            <Switch>
+          <Header />
+          <Switch >
+            <div className='switchbody'>
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-                {isAuthenticated && <Favorites/>}
-                <Paint/>
+                {isAuthenticated && <Favorites />}
+                <Paint />
+                <FactCard />
               </Route>
               {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
               <Route exact path="/Profile">
-                <Profile/>
+                <Profile />
               </Route>
               <Route exact path="/PostPainting">
-                {isAuthenticated&&<PostPainting/>}
+                {isAuthenticated && <PostPainting />}
               </Route>
               <Route exact path="/StorePage">
                 <StorePage isLoggedIn={isAuthenticated} userEmail={isAuthenticated ? user.email : ''}/>
               </Route>
               <Route exact path="/Aboutus">
-                <Aboutus/>
+                <Aboutus />
               </Route>
-            </Switch>
-            <Footer />
+            </div>
+          </Switch>
+          <Footer />
           {/* </IsLoadingAndError> */}
         </Router>
       </>

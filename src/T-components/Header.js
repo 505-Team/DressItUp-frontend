@@ -14,7 +14,7 @@ class Header extends React.Component {
     const { isAuthenticated } = this.props.auth0;
     return (
       <>
-        <Navbar collapseOnSelect expand="lg" bg="black" variant="black">
+        <Navbar className='navbarstaylheader' collapseOnSelect expand="lg" bg="black" variant="black">
 
           <img className='logoDesign' src={artLogo} autoplay loop
           alt="logo" />
