@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './T-components/Header';
 // import IsLoadingAndError from './IsLoadingAndError';
 import Footer from './T-components/Footer';
-import Login from './T-components/Login';
+// import Login from './T-components/Login';
 import Profile from './T-components/Profile';
 import Favorites from './T-components/Favorites';
 import { withAuth0 } from '@auth0/auth0-react';
@@ -17,7 +17,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import LoginButton from './T-components/LoginButton';
+// import LoginButton from './T-components/LoginButton';
 import FactCard from './T-components/FactCard';
 // import Card from './T-components/Card'
 
