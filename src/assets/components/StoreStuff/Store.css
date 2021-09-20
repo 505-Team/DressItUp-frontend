@@ -1,3 +1,72 @@
 #switcherContainer {
   width: 100%;
+  padding: 25px;
+  margin: 50px auto;
+}
+.scroll {
+  max-height: 150px;
+  height:  150px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.cardImage{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#filerFormContainer{
+  background-color: rgba(0, 0, 0, 0.616);
+  margin-left: 15px;
+  margin-top: 25px;
+  width: 100%;
+  /* min-height: 35vh; */
+  min-height: 100%;
+}
+#filerForm{
+  width: 100%;
+  padding: 15px;
+}
+#cardsRow{
+  justify-content: space-between;
+  align-items: Top;
+  margin: auto 25px;
+}
+
+.switchbody{
+  background-color: rgba(236, 160, 207, 0.397);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#storeContainer{
+  min-height: 100vh !important;
+  padding: 25px;
+  margin: 50px auto;
+}
+#storeItemsContainer{
+  min-height: 100vh;
+}
+
+.reactBlueButton{
+  background-color: rgba(254,170,150,255);
+  border-color: black;
+}
+
+.reactBlueButton:hover{
+  background-color: black;
+}
+.reactBlueButton:focus{
+  background-color: black;
+  border-color: solid 1px black;
+}
+
+.reactSecondaryButton{
+  border-color: black;
+  color: black
+}
+.reactSecondaryButton:hover{
+  border-color: black;
+  background-color: black;
 }

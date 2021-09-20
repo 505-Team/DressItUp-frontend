@@ -6,7 +6,7 @@ import AddToFavoriteModal from "./StoreStuff/AddToFavoriteModal";
 import PageSwitcher from "./StoreStuff/PageSwitcher";
 import axios from 'axios';
 import "./StoreStuff/Store.css"
-
+import AddRequestModal from "./StoreStuff/AddRequestModal";
 
 class StorePage extends React.Component {
   constructor(props) {
@@ -17,7 +17,9 @@ class StorePage extends React.Component {
       searchTerm: "",
       showAddedToFavoriteModal: false,
       favoritedPaintingName: "",
-      storeItemsArr: []
+      storeItemsArr: [],
+      showRequestModal: false,
+      requestedPaintingName: ''
     };
   }
 
@@ -53,7 +55,11 @@ class StorePage extends React.Component {
       searchTerm: text,
     });
   };
-
+  closeAddedToRequestsModal=()=>{
+    this.setState({
+      showRequestModal: false
+    })
+  }
 
   increasePage=(e)=>{
     e.preventDefault();
@@ -95,22 +101,45 @@ class StorePage extends React.Component {
       });
   }
 
+  addToRequests=(obj)=>{
+    const url = `http://localhost:3010/addRequestedPainting`;
+
+    this.setState({
+      requestedPaintingName: obj.title,
+      showRequestModal: true
+    })
+
+    axios
+      .post(url, obj)
+      .then((result) => {
+        // this.setState({
+        //   booksArr: result.data,
+        // });
+        console.log('successfuly sent data to backend!');
+      })
+      .catch((err) => {
+        console.log("faced an error while adding a painting to requests page.");
+      });
+  }
+
   render() {
     return (
       <>
       {console.log(this.props.userEmail)}
-        <h1>THIS IS A STORE PAGE!!!</h1>
         <AddToFavoriteModal show={this.state.showAddedToFavoriteModal} 
         handleClose={this.closeAddedToFavoriteModal}
         favPaintingName={this.state.favoritedPaintingName}
         />
+        <AddRequestModal show={this.state.showRequestModal} handleClose={this.closeAddedToRequestsModal} requestedPaintingName={this.state.requestedPaintingName}/>
+        <div id="storeContainer">
         <Row id="storeParentRow">
-          <Col>
+          <Col sm={3}>
             <FilterForm changeSearchTerm={this.changeSearchTerm} />
           </Col>
-          <Col xs={9}>
+          <Col sm={9}>
+            <div id="storeItemsContainer">
             <Row Row xs={1} md={3} className="g-4" id="cardsRow">
-            <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/>
+            {/* <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/> */}
               {this.state.storeItemsArr.filter((val) => {
                 if (this.state.searchTerm === "") {
                   return val;
@@ -123,15 +152,14 @@ class StorePage extends React.Component {
                   return val;
                 }
               }).map((item) => {
-                return <StoreItem item={item} addPainting={this.addPainting} isLoggedIn={this.props.isLoggedIn} email={this.props.userEmail}/>;
+                return <StoreItem item={item} addPainting={this.addPainting} isLoggedIn={this.props.isLoggedIn} email={this.props.userEmail} addToRequests={this.addToRequests}/>;
               })}
-              <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/>
             </Row>
+            </div>
+              <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/>
           </Col>
         </Row>
-
-
-        
+        </div>
       </>
     );
   }
