@@ -24,10 +24,17 @@ a:hover{
  
   width: 8%;
   height: 8%;
+  margin-left: 20px;
 }
 
 Header{
   font-family: 'Josefin Sans', sans-serif;
   position: fixed;
   font-weight: bold;
+}
+
+.headerNavButton:hover{
+  color: rgba(254,170,150,255);
+  border-bottom: solid rgba(254,170,150,255);
+  padding-bottom: 10px;
 }

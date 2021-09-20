@@ -38,12 +38,14 @@ class App extends React.Component {
           {/* <IsLoadingAndError> */}
           <Header />
           <Switch >
-            <div className='switchbody'>
+            <div>
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
              
-               {/* <CarsleBeging/> */}
-                <Paint />
+                <div id="topCaruselContainer">
+               <CarsleBeging/>
+               </div>
+                {/* <Paint /> */}
                 <FactCard />
               </Route>
               

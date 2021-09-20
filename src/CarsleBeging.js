@@ -1,85 +1,64 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel';
-
-
-
+import Carousel from "react-bootstrap/Carousel";
 
 class CarsleBeging extends React.Component {
+  render() {
+    return (
+      <>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+        </style>
+        <Carousel id="topCarusel" fade >
+          <Carousel.Item>
+            <img
+              src="https://m.media-amazon.com/images/I/91TN+nabSWL._AC_SL1500_.jpg"
+              alt="First slide"
+              className='caruseImage'
+            />
+            <Carousel.Caption>
 
-    
-    render() {
-        
-        return (
-            <>
-            <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
-</style>
-                <Carousel  fade>
-                    <Carousel.Item >
+            </Carousel.Caption>
+          </Carousel.Item>
 
-                        <img
-                            
-                            src="https://media.timeout.com/images/103166739/750/562/image.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption >
-                            <div >
-                            <h3>The Starry Night, by: Vincent van Gogh</h3>
-                            <p>The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889. Indeed, The Starry Night seems to reflect his turbulent state of mind at the time, as the night sky comes alive with swirls and orbs of frenetically applied brush marks springing from the yin and yang of his personal demons and awe of nature.</p>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/12/09/21/01/still-life-562357_960_720.jpg"
+              alt="Second slide"
+              className='caruseImage'
+            />
 
-                    <Carousel.Item>
-                        <img
-                           
-                            src="https://www.salvador-dali.org/media/upload/cataleg_pintura/ALTA/0265.jpg"
-                            alt="Second slide"
-                        />
+            <Carousel.Caption>
 
-                        <Carousel.Caption >
-                        <div >
+            </Carousel.Caption>
+          </Carousel.Item>
 
-                            <h3>The Persistence of Memory, by: Salvador Dali</h3>
-                            <p>The Persistence of Memory alludes to the influence of scientific advances during Dali's lifetime. The stark yet dreamlike scenery reflects a Freudian emphasis on the dream landscape while the melted watches may refer to Einstein's Theory of Relativity, in which the scientist references the distortion of space and time.</p>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="https://cdn.pixabay.com/photo/2013/02/14/03/51/painting-81504_960_720.jpg"
+              alt="Third slide"
+              className='caruseImage'
+            />
 
-                    <Carousel.Item>
-                        <img
-                            
-                            src="https://media.timeout.com/images/105222673/750/562/image.jpg"
-                            alt="Third slide"
-                        />
+            <Carousel.Caption>
+              
+            </Carousel.Caption>
+          </Carousel.Item>
 
-                        <Carousel.Caption>
-                        <div >
+          <Carousel.Item>
+            <img
+              src="https://images.unsplash.com/photo-1579541764764-6401d4100dd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+              alt="Fourth slide"
+              className='caruseImage'
+            />
 
-                            <h3>The Harvesters, by: Pieter Bruegel the Elder</h3>
-                            <p>This composition was one of six created on the theme of the seasons. The time is probably early September. A group of peasants on the left cut and bundle ripened wheat, while the on the right, another group takes their midday meal.</p>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <img
-                            
-                            src="https://media.timeout.com/images/105293264/750/562/image.jpg"
-                            alt="Fourth slide"
-                        />
-
-                        <Carousel.Caption > 
-                        <div >
-
-                            <h3>A Sunday Afternoon on the Island of La Grande Jatte, by: Georges Seurat</h3>
-                            <p>Seurat often made this milieu his subject, which differed from the bourgeois portrayals of his Impressionist contemporaries. Seurat abjured the capture-the-moment approach of Manet, Monet and Degas, going instead for the sense of timeless permanence found in Greek sculpture.</p>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </>
-        )
-    }
+            <Carousel.Caption>
+ 
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </>
+    );
+  }
 }
 export default CarsleBeging;
