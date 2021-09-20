@@ -1,6 +1,7 @@
 .loginButtonstyle {
 float:right;
 font-family: 'Josefin Sans', sans-serif;
+
 }
 
 a{
@@ -16,7 +17,7 @@ a:hover{
 #link {
 
   color:white;
-  margin-left: 100px;
+  margin-left: 5%;
 }
 
 .logoDesign{
@@ -30,11 +31,11 @@ Header{
   position: fixed;
   font-weight: bold;
 
-}
+
 /* .navbarstaylheader{
   position:sticky;
   top: 0;
 } */
 /* Navbar{
   padding-bottom: 90%;
-} */
+} *

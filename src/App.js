@@ -21,6 +21,7 @@ import {
 } from "react-router-dom";
 // import LoginButton from './T-components/LoginButton';
 import FactCard from './T-components/FactCard';
+import CartItem from './T-components/CartItem';
 // import Card from './T-components/Card'
 
 class App extends React.Component {
@@ -62,6 +63,9 @@ class App extends React.Component {
               </Route>
               <Route exact path="/Aboutus">
                 <Aboutus />
+              </Route>
+              <Route exact path="/CartItem">
+              {isAuthenticated && <CartItem />}
               </Route>
             </div>
           </Switch>
