@@ -23,6 +23,7 @@ class App extends React.Component {
 
     console.log('app', this.props);
     const { isAuthenticated } = this.props.auth0;
+    const { user } = this.props.auth0;
     return (
       <>
         <Router>
@@ -42,7 +43,7 @@ class App extends React.Component {
                 {isAuthenticated&&<PostPainting/>}
               </Route>
               <Route exact path="/StorePage">
-                <StorePage/>
+                <StorePage isLoggedIn={isAuthenticated} userEmail={isAuthenticated ? user.email : ''}/>
               </Route>
               <Route exact path="/Aboutus">
                 <Aboutus/>
