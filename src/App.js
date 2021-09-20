@@ -11,11 +11,13 @@ import PostPainting from './M-Components/Postpainting';
 import StorePage from './assets/components/StorePage';
 import Aboutus from './E-Components/Aboutus';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import LoginButton from './T-components/LoginButton';
 
 class App extends React.Component {
 
@@ -23,6 +25,7 @@ class App extends React.Component {
 
     console.log('app', this.props);
     const { isAuthenticated } = this.props.auth0;
+    const { user } = this.props.auth0;
     return (
       <>
         <Router>
@@ -31,7 +34,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-                {isAuthenticated ? <Favorites/>: <Login/>}
+                {isAuthenticated && <Favorites/>}
                 <Paint/>
               </Route>
               {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
@@ -42,7 +45,7 @@ class App extends React.Component {
                 {isAuthenticated&&<PostPainting/>}
               </Route>
               <Route exact path="/StorePage">
-                <StorePage/>
+                <StorePage isLoggedIn={isAuthenticated} userEmail={isAuthenticated ? user.email : ''}/>
               </Route>
               <Route exact path="/Aboutus">
                 <Aboutus/>
