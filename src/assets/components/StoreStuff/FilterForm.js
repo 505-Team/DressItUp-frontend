@@ -21,7 +21,7 @@ class FilterForm extends React.Component {
               <Form.Label>Place Of Origin</Form.Label>
               <Form.Control type="text" placeholder="China, France etc..." name="placeOfOriginText"/>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className='reactBlueButton'>
               Filter
             </Button>
           </Form>
