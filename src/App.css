@@ -1,3 +1,6 @@
+/* *{margin: 10em 0;
+} */
+
 .scroll {
   max-height: 150px;
   height:  150px;
@@ -25,4 +28,10 @@
 #cardsRow{
   justify-content: space-between;
   margin: auto 25px;
+}
+
+.switchbody{
+  background-color: rgba(236, 160, 207, 0.397);
+  margin-left: 5%;
+  margin-right: 5%;
 }

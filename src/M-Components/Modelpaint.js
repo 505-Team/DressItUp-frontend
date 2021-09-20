@@ -18,12 +18,11 @@ class Modelpaint extends Component {
 
                         <Form onSubmit={this.props.addPainting} >
 
+
                             <Form.Group className="mb-3" >
-                                <Form.Label>Painter name</Form.Label>
-                                <Form.Control type="text" name="painter" placeholder="Enter the name of painter" />
-
+                                <Form.Label>Image of the paint</Form.Label>
+                                <Form.Control type="img" name="imgUrl" placeholder="Enter the image of your paint" />
                             </Form.Group>
-
 
                             <Form.Group className="mb-3" >
                                 <Form.Label>The title of the painting</Form.Label>
@@ -32,21 +31,29 @@ class Modelpaint extends Component {
                             </Form.Group>
 
                             <Form.Group className="mb-3" >
-                                <Form.Label>Image of the paint</Form.Label>
-                                <Form.Control type="img" name="imgUrl" placeholder="Enter the image of your paint" />
-                            </Form.Group>
-
-
-                            <Form.Group className="mb-3" >
                                 <Form.Label>Description of the painting</Form.Label>
                                 <Form.Control type="text" name="description" placeholder="Enter the description" />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" >
 
+                            <Form.Group className="mb-3" >
+                                <Form.Label>Date</Form.Label>
+                                <Form.Control type="text" name="painter" placeholder="Enter the Date of painter" />
+
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" >
                                 <Form.Label> Place of origin</Form.Label>
                                 <Form.Control type="text" name="status" placeholder="Enter the Place of origin" />
                             </Form.Group>
+
+
+                            <Form.Group className="mb-3" >
+                                <Form.Label> Artist Display</Form.Label>
+                                <Form.Control type="text" name="artistDisplay" placeholder="Enter the Artist Display" />
+                            </Form.Group>
+
+                            
                             <Button variant="primary" type="submit">
                                 Add the painting
                             </Button>
@@ -71,7 +78,6 @@ class Modelpaint extends Component {
             </div>
             
         );
-        // alert('hi')
     }
 }
 export default Modelpaint;

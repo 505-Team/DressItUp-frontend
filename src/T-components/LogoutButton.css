@@ -1,7 +1,31 @@
 .logoutButtonstyle{
-    margin-left: 10%;
+margin-left: 10%;
 background-color: royalblue;
 color:  white;
 width: 6%;
-height: 6%;
+height: 2.8rem;
+
+
+border-radius: 6px;
+    /* background: linear-gradient(to right, rgba(22, 20, 15, 0.877)40%, rgba(4, 76, 112, 0.911)); */
+    /* padding-top: 20px;
+padding-left: 16px; */
+    /* height: 55px; */
+    /* width: 180px; */
+    content: "";
+    display: table;
+    clear: both;
+    /* margin-left: 500px;
+    margin-top: 20px; */
+
+}
+
+
+.logoutButtonstyle:hover {
+    transition: all .2s ease-in-out;
+    background-color: #0c7aa531;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    box-shadow: 1px 1px #07599c, 2px 2px #7c98af, 3px 3px #53a7ea;
 }

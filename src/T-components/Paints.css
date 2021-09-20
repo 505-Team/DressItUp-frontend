@@ -1,0 +1,56 @@
+.carouselStyle {
+    /* max-width: 100%; */
+    margin-top: 2%;
+    width: 100%;
+    height: 31.5rem;
+
+  }
+
+  .itemCarousel{
+    height: 500px;
+  }
+  
+
+  .imgCarousel{
+    width: 50%;
+    float: left;
+    height: 100%;
+    min-height: 500px;
+    /* background-color: darkblue; */
+  }
+  /* p ,h3 {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+
+  } */
+
+  .captionStayl{
+    text-align: justify;
+    width: 100%;
+    height: 100% !important;
+    float: right;
+    margin-left: 37%;
+    margin-top: 6% !important;
+    padding-top: 8%;
+    margin-right: 9%;
+    /* background-color: coral; */
+
+    min-height: 500px !important;
+
+  }
+
+  .textcontenar{
+    width: 40%;
+    height: 100%;
+  }
+
+  .textcontenar p, .textcontenar h3{
+margin: 35px;
+text-align: justify;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-family: 'Josefin Sans', sans-serif;
+
+
+  }

@@ -1,0 +1,68 @@
+.scrollstyle {
+    max-height: 150px;
+    height:  150px;
+    overflow-y: auto;
+    /* width: 100%; */
+    font-weight: bolder;
+}
+  
+  .cardImage{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    margin-bottom: 9%;
+
+    /* float: left; */
+    /* padding: 3px; */
+    /* margin-left: 66px;
+    display: block; */
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+    
+
+}
+  
+
+  .rowofitem{
+/* margin-left: 2%; */
+/* content: "";
+    clear: both;
+    display: table; */
+    margin-bottom: 10%;
+    /* position: relative; */
+    /* margin: auto; */
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.buttondelet{
+    background-color: rgb(0, 0, 0);
+    color:  white;
+    
+    
+    border-radius: 9px;
+        /* background: linear-gradient(to right, rgba(22, 20, 15, 0.877)40%, rgba(4, 76, 112, 0.911)); */
+        /* padding-top: 20px;
+    padding-left: 16px; */
+        /* height: 55px; */
+        /* width: 180px; */
+        content: "";
+        display: table;
+        clear: both;
+        /* margin-left: 500px;
+        margin-top: 20px; */
+    
+    }
+  
+.buttondelet:hover{
+     
+        transition: all .2s ease-in-out;
+        background-color: #886c88c7;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+        box-shadow: 1px 1px #000000, 2px 2px #121314, 3px 3px #090f14;
+}
+

@@ -2,3 +2,13 @@
     /* float:right; */
     margin-left: 30%;
 }
+
+
+.loginButtonstyle:hover {
+    transition: all .2s ease-in-out;
+    background-color: #0c7aa531;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    box-shadow: 1px 1px #07599c, 2px 2px #7c98af, 3px 3px #53a7ea;
+}

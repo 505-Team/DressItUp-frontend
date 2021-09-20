@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { withAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import PaintingItem from './PaintingItem';
+import './Postpainting.css';
 
 //
 import Button from 'react-bootstrap/Button';
@@ -20,6 +21,7 @@ class Postpainting extends React.Component {
       title: '',
       painter:'',
       imgUrl:'',
+      artistDisplay:'',
       idBook: '',
       description: '',
       status: '',
@@ -49,6 +51,7 @@ class Postpainting extends React.Component {
     const obj = {
       title: event.target.title.value,
       painter: event.target.painter.value,
+      artistDisplay:event.target.artistDisplay.value,
       imgUrl:event.target.imgUrl.value,
       description: event.target.description.value,
       status: event.target.status.value,
@@ -101,6 +104,7 @@ class Postpainting extends React.Component {
     this.setState({
       showForm: true,
       title: item.title,
+      artistDisplay:item.artistDisplay,
       painter: item.painter,
       imgUrl:item.imgUrl,
       description: item.description,
@@ -116,6 +120,7 @@ class Postpainting extends React.Component {
     const email = user.email;
     const obj = {
       title: event.target.title.value,
+      artistDisplay:event.target.artistDisplay.value,
       description: event.target.description.value,
       painter: event.target.painter.value,
       imgUrl:event.target.imgUrl.value,
@@ -141,14 +146,17 @@ class Postpainting extends React.Component {
   render() {
     return (
       <>
-        <h1>My Painting</h1>
-        <p>
-          This is a collection of your Painting
-        </p>
+                              <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+</style>
+
+        <h1 className='hinpostpainting'>Hello in posting page  👩‍🎨 🎨 👨‍🎨</h1>
+        <p className='pinpostpainting'>
+        You can add your artwork here        </p>
 
 
 
-        <Button onClick={this.handelShowModel}> Add  </Button>
+        <Button className='addbuttonstayle' onClick={this.handelShowModel}> Add your paint  </Button>
 
         <PaintingItem
           // item = {item}
@@ -168,6 +176,7 @@ class Postpainting extends React.Component {
 
           close={this.close}
           title={this.state.title}
+          artistDisplay={this.state.artistDisplay}
           painter={this.state.painter}
           imgUrl={this.state.imgUrl}
           description={this.state.description}
