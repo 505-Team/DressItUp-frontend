@@ -8,13 +8,14 @@ import LogoutButton from './LogoutButton';
 import { withAuth0 } from "@auth0/auth0-react"
 import LoginButton from './LoginButton';
 import artLogo from '../assets/artLogo/World Of Art.gif';
+import CartItem from './CartItem';
 
 class Header extends React.Component {
   render() {
     const { isAuthenticated } = this.props.auth0;
     return (
       <>
-        <Navbar className='navbarstaylheader' collapseOnSelect expand="lg" bg="black" variant="black">
+        <Navbar collapseOnSelect expand="lg" bg="black" variant="black">
 
           <img className='logoDesign' src={artLogo} autoplay loop
           alt="logo" />
@@ -25,8 +26,9 @@ class Header extends React.Component {
               <Link to="/" id="link">Favorites</Link>
               {isAuthenticated && <Link to="/profile" id="link">Profile</Link>}
               <Link to="/Aboutus" id="link">About Us</Link>
+              {isAuthenticated && <Link to="/CartItem" id="link">Cart Item</Link>}
               {isAuthenticated && <Link to="/PostPainting" id="link">Post Painting</Link>}
-              {!isAuthenticated &&  <LoginButton style={{color: 'red'}} />} 
+              {!isAuthenticated &&  <LoginButton />} 
 
 
               {isAuthenticated && <LogoutButton />}
