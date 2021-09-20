@@ -3,8 +3,9 @@ import Header from './T-components/Header';
 // import IsLoadingAndError from './IsLoadingAndError';
 import Footer from './T-components/Footer';
 // import Login from './T-components/Login';
-import Profile from './T-components/Profile';
-import Favorites from './T-components/Favorites';
+import CarsleBeging from "./CarsleBeging";
+
+
 import { withAuth0 } from '@auth0/auth0-react';
 import Paint from './T-components/Paint';
 import PostPainting from './M-Components/Postpainting';
@@ -12,6 +13,7 @@ import StorePage from './assets/components/StorePage';
 import Aboutus from './E-Components/Aboutus';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Fav from './E-Components/Favorites'
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,14 +40,20 @@ class App extends React.Component {
             <div className='switchbody'>
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-                {isAuthenticated && <Favorites />}
+             
+               {/* <CarsleBeging/> */}
                 <Paint />
                 <FactCard />
               </Route>
-              {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
-              <Route exact path="/Profile">
-                <Profile />
+              
+              <Route exact path="/Favorites">
+                {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
+                {isAuthenticated && <Fav />}
+                
               </Route>
+              
+              {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
+             
               <Route exact path="/PostPainting">
                 {isAuthenticated && <PostPainting />}
               </Route>

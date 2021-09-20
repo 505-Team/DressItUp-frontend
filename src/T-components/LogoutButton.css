@@ -1,9 +1,12 @@
 .logoutButtonstyle{
 margin-left: 10%;
-background-color: royalblue;
+background-color: rgba(240, 242, 247, 0.274);
 color:  white;
 width: 6%;
 height: 2.8rem;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
+border: rgba(0, 0, 255, 0);
 
 
 border-radius: 6px;
@@ -27,5 +30,5 @@ padding-left: 16px; */
     -webkit-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9);
-    box-shadow: 1px 1px #07599c, 2px 2px #7c98af, 3px 3px #53a7ea;
+    box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
 }
