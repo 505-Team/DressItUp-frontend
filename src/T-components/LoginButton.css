@@ -1,6 +1,10 @@
 .loginButtonstyle{
     /* float:right; */
     margin-left: 30%;
+    background-color: rgba(240, 242, 247, 0.274);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    border: rgba(0, 0, 255, 0);
 }
 
 
@@ -10,5 +14,5 @@
     -webkit-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9);
-    box-shadow: 1px 1px #07599c, 2px 2px #7c98af, 3px 3px #53a7ea;
+    box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
 }

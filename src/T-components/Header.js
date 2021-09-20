@@ -14,6 +14,9 @@ class Header extends React.Component {
     const { isAuthenticated } = this.props.auth0;
     return (
       <>
+                                    <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+</style>
         <Navbar className='navbarstaylheader' collapseOnSelect expand="lg" bg="black" variant="black">
 
           <img className='logoDesign' src={artLogo} autoplay loop
@@ -22,10 +25,10 @@ class Header extends React.Component {
 
               <Link to="/" id="link">Home</Link>
               <Link to="/StorePage" id="link">Gallery & Store</Link>
-              <Link to="/" id="link">Favorites</Link>
-              {isAuthenticated && <Link to="/profile" id="link">Profile</Link>}
+              {isAuthenticated &&<Link to="/Favorites" id="link">Favorites</Link>}
+              {isAuthenticated && <Link to="/PostPainting" id="link">Artwork</Link>}
+             
               <Link to="/Aboutus" id="link">About Us</Link>
-              {isAuthenticated && <Link to="/PostPainting" id="link">Post Painting</Link>}
               {!isAuthenticated &&  <LoginButton style={{color: 'red'}} />} 
 
 
