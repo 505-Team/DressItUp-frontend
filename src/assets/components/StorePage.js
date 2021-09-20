@@ -6,6 +6,7 @@ import FilterForm from "./StoreStuff/FilterForm";
 import AddToFavoriteModal from "./StoreStuff/AddToFavoriteModal";
 import axios from 'axios';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -80,6 +81,9 @@ class App extends React.Component {
             </Row>
           </Col>
         </Row>
+
+
+        
       </>
     );
   }
