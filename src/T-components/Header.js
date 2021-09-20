@@ -29,34 +29,34 @@ class Header extends React.Component {
           <img className="logoDesign" src={artLogo} autoplay loop alt="logo" />
 
           <Link to="/" id="link">
-            Home
+            <p className="headerNavButton"> Home</p>
           </Link>
           <Link to="/StorePage" id="link">
-            Gallery & Store
+            <p className="headerNavButton">Gallery & Store</p>
           </Link>
           {isAuthenticated && (
             <Link to="/Favorites" id="link">
-              Favorites
+              <p className="headerNavButton">Favorites</p>
             </Link>
           )}
           {isAuthenticated && (
             <Link to="/PostPainting" id="link">
-              Artwork
+              <p className="headerNavButton">Artwork</p>
             </Link>
           )}
 
           <Link to="/Aboutus" id="link">
-            About Us
+            <p className="headerNavButton">About Us</p>
           </Link>
 
           {isAuthenticated && (
             <Link to="/CartItem" id="link">
-              Requested Items
+              <p className="headerNavButton">Requested Items</p>
             </Link>
           )}
           {isAuthenticated && (
             <Link to="/PostPainting" id="link">
-              Post Painting
+              <p className="headerNavButton">Post Painting</p>
             </Link>
           )}
           {!isAuthenticated && <LoginButton style={{ color: "red" }} />}
