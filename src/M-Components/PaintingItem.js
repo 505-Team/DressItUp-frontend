@@ -42,8 +42,8 @@ class PaintingItem extends React.Component {
 
 
                 </Card.Body>
-                <Button className='buttondelet' variant="primary" onClick={() => this.props.deletePainting(item._id)}> Delete</Button>
-                <Button className='buttondelet' variant="primary" onClick={()=>this.props.handelupdateForm(item)}>Update Information</Button>
+                <Button className='buttondelet' variant="primary" onClick={() => this.props.deletePainting(item._id)}> Remove</Button>
+                <Button className='buttondelet' variant="primary" onClick={()=>this.props.handelupdateForm(item)}>Edit</Button>
               </Card>
             </Col>
           )}</Row>

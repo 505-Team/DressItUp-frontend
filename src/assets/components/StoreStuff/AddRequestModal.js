@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
 
-class AddToFavoriteModal extends React.Component {
+class AddRequestModal extends React.Component {
     constructor(props){
         super(props)
     }
@@ -11,9 +11,9 @@ class AddToFavoriteModal extends React.Component {
       <>
         <Modal show={this.props.show} onHide={this.props.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Added To Favorites!</Modal.Title>
+            <Modal.Title>Request Successful!</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Added "{this.props.favPaintingName}" to your favorites collection!</Modal.Body>
+          <Modal.Body>Added "{this.props.requestedPaintingName}" to your requests collection!</Modal.Body>
           <Modal.Footer>
             <Button className='reactBlueButton' variant="primary" onClick={this.props.handleClose}>
               Ok
@@ -25,4 +25,4 @@ class AddToFavoriteModal extends React.Component {
   }
 }
 
-export default AddToFavoriteModal;
+export default AddRequestModal;

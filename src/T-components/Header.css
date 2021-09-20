@@ -1,12 +1,13 @@
 .loginButtonstyle {
 float:right;
+font-family: 'Josefin Sans', sans-serif;
 
 }
 
 a{
     color:#fff;
     text-decoration: none;
-
+    font-family: 'Josefin Sans', sans-serif;
   }
 
 a:hover{
@@ -14,12 +15,27 @@ a:hover{
   }
 
 #link {
+
   color:white;
   margin-left: 5%;
 }
 
 .logoDesign{
+ 
   width: 8%;
   height: 8%;
 }
 
+Header{
+  font-family: 'Josefin Sans', sans-serif;
+  position: fixed;
+  font-weight: bold;
+
+
+/* .navbarstaylheader{
+  position:sticky;
+  top: 0;
+} */
+/* Navbar{
+  padding-bottom: 90%;
+} *

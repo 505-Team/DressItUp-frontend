@@ -148,19 +148,20 @@ class Postpainting extends React.Component {
 
 
   render() {
+    const { user } = this.props.auth0;
     return (
       <>
                               <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
 </style>
 
-        <h1 className='hinpostpainting'>Hello in posting page  👩‍🎨 🎨 👨‍🎨</h1>
+        <h1 className='hinpostpainting'>Hello {user.name}</h1>
         <p className='pinpostpainting'>
-        You can add your artwork here        </p>
+        Uploald your artwork 🎨 </p>
 
 
 
-        <Button className='addbuttonstayle' onClick={this.handelShowModel}> Add your paint  </Button>
+        <Button className='addbuttonstayle' onClick={this.handelShowModel}>Upload</Button>
 
         <PaintingItem
           // item = {item}

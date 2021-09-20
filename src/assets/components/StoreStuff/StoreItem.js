@@ -8,7 +8,6 @@ class StoreItem extends React.Component {
     this.state = {
       favorited: false,
       isLoggedIn: this.props.isLoggedIn,
-      
     };
   }
   favoriteThis = () => {
@@ -23,7 +22,7 @@ class StoreItem extends React.Component {
       place_of_origin: this.props.item.place_of_origin,
       date_display: this.props.item.date_display,
       artist_display: this.props.item.artist_display,
-      email: this.props.email
+      email: this.props.email,
     };
     this.props.addPainting(painting);
   };
@@ -33,10 +32,25 @@ class StoreItem extends React.Component {
     });
   };
 
+  requestThis=()=>{
+    const requestedPainting = {
+      id: this.props.item.id,
+      title: this.props.item.title,
+      image_url: this.props.item.image_url,
+      provenance_text: this.props.item.provenance_text,
+      place_of_origin: this.props.item.place_of_origin,
+      date_display: this.props.item.date_display,
+      artist_display: this.props.item.artist_display,
+      email: this.props.email,
+    };
+
+    this.props.addToRequests(requestedPainting);
+  }
+
   render() {
     return (
       <>
-        <Card style={{ width: "18rem" }}>
+        <Card alignment='center' style={{ width: "18rem" }}>
           <Card.Img
             className="cardImage"
             variant="top"
@@ -45,7 +59,9 @@ class StoreItem extends React.Component {
           <Card.Body>
             <Card.Title>{this.props.item.title}</Card.Title>
             <Card.Text>
-              <div class="col-sm-4 scroll">{this.props.item.provenance_text}</div>
+              <div class="col-sm-4 scroll">
+                {this.props.item.provenance_text}
+              </div>
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
@@ -60,6 +76,7 @@ class StoreItem extends React.Component {
           <Card.Body>
             {this.state.isLoggedIn && (
               <Button
+              className='reactBlueButton'
                 onClick={
                   this.state.favorited ? this.unFavoriteThis : this.favoriteThis
                 }
@@ -71,6 +88,12 @@ class StoreItem extends React.Component {
                   <>Add To Favorites</>
                 )}
               </Button>
+            )}
+          </Card.Body>
+          <Card.Body>
+            {this.state.isLoggedIn && (
+              <Button onClick={this.requestThis}
+              variant="primary" className='reactBlueButton'>Request</Button>
             )}
           </Card.Body>
         </Card>
