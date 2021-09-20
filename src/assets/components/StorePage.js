@@ -7,6 +7,7 @@ import PageSwitcher from "./StoreStuff/PageSwitcher";
 import axios from 'axios';
 import "./StoreStuff/Store.css"
 
+
 class StorePage extends React.Component {
   constructor(props) {
     super(props);
@@ -128,6 +129,9 @@ class StorePage extends React.Component {
             </Row>
           </Col>
         </Row>
+
+
+        
       </>
     );
   }

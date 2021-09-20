@@ -10,6 +10,8 @@ import Modelpaint from './Modelpaint';
 import UpdatePaint from './UpdatePaint';
 
 
+
+
 class Postpainting extends React.Component {
 
   constructor(props) {
@@ -23,7 +25,8 @@ class Postpainting extends React.Component {
       idBook: '',
       description: '',
       status: '',
-      showForm: false
+      showForm: false,
+      
     }
   }
 
@@ -136,6 +139,7 @@ class Postpainting extends React.Component {
       })
   }
 
+  
 
 
   render() {
@@ -175,6 +179,7 @@ class Postpainting extends React.Component {
           updatePainting={this.updatePainting}
 
         />
+
 
 
       </>
