@@ -44,21 +44,14 @@ class Header extends React.Component {
               <p className="headerNavButton">Artwork</p>
             </Link>
           )}
-
+          {isAuthenticated && (
+            <Link to="/CartItem" id="link">
+              <p className="headerNavButton">Requested Paintings</p>
+            </Link>
+          )}
           <Link to="/Aboutus" id="link">
             <p className="headerNavButton">About Us</p>
           </Link>
-
-          {isAuthenticated && (
-            <Link to="/CartItem" id="link">
-              <p className="headerNavButton">Requested Items</p>
-            </Link>
-          )}
-          {isAuthenticated && (
-            <Link to="/PostPainting" id="link">
-              <p className="headerNavButton">Post Painting</p>
-            </Link>
-          )}
           {!isAuthenticated && <LoginButton style={{ color: "red" }} />}
 
           {isAuthenticated && <LogoutButton />}
