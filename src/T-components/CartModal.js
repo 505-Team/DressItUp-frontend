@@ -13,17 +13,6 @@ import Col from 'react-bootstrap/Col';
 
 class purchaseModal extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         showModal: false,
-
-    //     }
-    // }
-    
-
-    
-
     render() {
         return (
             <>
@@ -33,16 +22,14 @@ class purchaseModal extends React.Component {
                     </Modal.Header>
                     <Modal.Body>
                         <Form>
-                           
-                                <Form.Group as={Col} controlId="formGridEmail">
-                                    <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                </Form.Group>
 
-                               
-                           
+                            <Form.Group as={Col} controlId="formGridEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formGridAddress1">
+
+                          <Form.Group className="mb-3" controlId="formGridAddress1">
                                 <Form.Label>Address</Form.Label>
                                 <Form.Control placeholder="1234 Main St" />
                             </Form.Group>
@@ -72,7 +59,7 @@ class purchaseModal extends React.Component {
                                 </Form.Group>
                             </Row>
 
-                            <Button onClick={this.props.close} variant="primary" type="submit">
+                            <Button onClick={this.alertHandler} variant="primary" type="submit">
                                 Confirm Purchase
                             </Button>
                         </Form>
@@ -84,9 +71,6 @@ class purchaseModal extends React.Component {
                         <Button variant="secondary" onClick={this.props.close}>
                             Close
                         </Button>
-                        {/* <Button variant="primary" onClick={handleClose}>
-                            Save Changes
-                        </Button> */}
                     </Modal.Footer>
                 </Modal>
             </>

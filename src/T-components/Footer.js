@@ -97,10 +97,10 @@ class Footer extends React.Component {
                     Useful links
                   </h6>
                   <p>
-                    <a href="#!" className="text-reset">Gallery & Store</a>
+                    <a href="/" className="text-reset">Back to Home</a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">About Us</a>
+                    <a href="/Aboutus" className="text-reset">About Us</a>
                   </p>
                 </div>
                 {/* <!-- Grid column --> */}
