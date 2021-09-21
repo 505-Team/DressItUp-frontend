@@ -14,7 +14,9 @@ class StorePage extends React.Component {
 
     this.state = {
       pageNumber: 1,
+      nameSearchTerm: "",
       searchTerm: "",
+      dateSearchTerm: '',
       showAddedToFavoriteModal: false,
       favoritedPaintingName: "",
       storeItemsArr: [],
@@ -50,10 +52,13 @@ class StorePage extends React.Component {
     })
   }
 
-  changeSearchTerm = (text) => {
+  changeSearchTerm = (text,name,date) => {
     this.setState({
       searchTerm: text,
+      nameSearchTerm: name,
+      dateSearchTerm: date
     });
+    console.log(text,name,date)
   };
   closeAddedToRequestsModal=()=>{
     this.setState({
@@ -141,13 +146,11 @@ class StorePage extends React.Component {
             <Row Row xs={1} md={3} className="g-4" id="cardsRow">
             {/* <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/> */}
               {this.state.storeItemsArr.filter((val) => {
-                if (this.state.searchTerm === "") {
+                if (this.state.searchTerm === "" && this.state.dateSearchTerm==="" &&this.state.nameSearchTerm==="") {
                   return val;
                 } else if (
-                  val.place_of_origin != null &&
-                  val.place_of_origin
-                    .toLowerCase()
-                    .includes(this.state.searchTerm.toLowerCase())
+                  val.place_of_origin != null &&(
+                  val.place_of_origin.toLowerCase().includes(this.state.searchTerm.toLowerCase()) || val.date_display.toLowerCase().includes(this.state.dateSearchTerm.toLowerCase()) ||val.title.toLowerCase().includes(this.state.nameSearchTerm.toLowerCase()))
                 ) {
                   return val;
                 }

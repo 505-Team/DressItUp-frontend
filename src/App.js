@@ -7,7 +7,7 @@ import CarsleBeging from "./CarsleBeging";
 
 
 import { withAuth0 } from '@auth0/auth0-react';
-import Paint from './T-components/Paint';
+
 import PostPainting from './M-Components/Postpainting';
 import StorePage from './assets/components/StorePage';
 import Aboutus from './E-Components/Aboutus';
