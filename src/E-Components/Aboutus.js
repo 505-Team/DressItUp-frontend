@@ -21,11 +21,7 @@ class Aboutus extends React.Component {
                         <p className="p12">We provide you the best paintings by talented artists in the world.</p>
                     </h3>
                     <p  className="p2">
-                    We provide you the best paintings by talented artists in the world.
-                    We provide you the best paintings by talented artists in the world.
-                    We provide you the best paintings by talented artists in the world.
-                    We provide you the best paintings by talented artists in the world.
-                    We provide you the best paintings by talented artists in the world.</p>
+                 </p>
                     </div>
                     </section>
                     <section>
@@ -43,7 +39,7 @@ class Aboutus extends React.Component {
                       <h3><p className="p">Musa'b Shalaldeh</p></h3> 
                       <h4 className="h4"><p className="p0">Software Developer</p></h4>
                     </Figure.Caption>
-                    <Figure.Caption >
+                    <Figure.Caption className="memberBio">
                     <h5 className="h5"><p>I graduated as an Electrical Engineer from Jordan University of Science and Technology, I am looking forward to become a programmer.</p></h5>
                    
                     </Figure.Caption>
@@ -51,7 +47,7 @@ class Aboutus extends React.Component {
 
                 </Figure>
 
-                <Figure className="Figure3">
+                <Figure className="Figure">
                     <Figure.Image className="img"
 
                         alt="171x180"
@@ -62,7 +58,7 @@ class Aboutus extends React.Component {
                       <h3><p className="p">Tariq Sharaia</p></h3> 
                       <h4 className="h4"><p className="p0">Software Developer</p></h4>
                     </Figure.Caption>
-                    <Figure.Caption >
+                    <Figure.Caption className="memberBio">
                     <h5 className="h5"><p>I graduated as an Electrical Engineer from Jordan University of Science and Technology, I am looking forward to become a programmer.</p></h5>
                      
                     </Figure.Caption>
@@ -81,14 +77,14 @@ class Aboutus extends React.Component {
                       <h3><p className="p">Amer Alqnahrah</p></h3> 
                       <h4 className="h4"><p className="p0">Software Developer</p></h4>
                     </Figure.Caption>
-                    <Figure.Caption >
+                    <Figure.Caption className="memberBio">
                     <h5 className="h5"><p>I graduated as an Electrical Engineer from Jordan University of Science and Technology, I am looking forward to become a programmer.</p></h5>
                      
                     </Figure.Caption>
                   
                   
                 </Figure>
-                <Figure className="Figure1">
+                <Figure className="Figure">
                     <Figure.Image className="img"
                         width={171}
                         height={180}
@@ -100,13 +96,13 @@ class Aboutus extends React.Component {
                       <h3><p className="p"> Malak Khasawneh</p></h3> 
                       <h4 className="h4"><p className="p0">Software Developer</p></h4>
                     </Figure.Caption>
-                    <Figure.Caption >
+                    <Figure.Caption className="memberBio">
                     <h5 className="h5"><p>I graduated as an Electrical Engineer from Jordan University of Science and Technology, I am looking forward to become a programmer.</p></h5>
                      
                     </Figure.Caption>
                    
                 </Figure>
-                <Figure className="Figure2">
+                <Figure className="Figure1">
                     <Figure.Image className="img"
                         width={171}
                         height={180}
@@ -118,22 +114,11 @@ class Aboutus extends React.Component {
                       <h3><p className="p">Esra'a shurafat</p></h3> 
                       <h4 className="h4"><p className="p0">Software Developer</p></h4>
                     </Figure.Caption>
-                    <Figure.Caption >
+                    <Figure.Caption className="memberBio">
                     <h5 className="h5"><p>I graduated as an Electrical Engineer from Jordan University of Science and Technology, I am looking forward to become a programmer.</p></h5>
                     </Figure.Caption>
                    
                 </Figure>
-
-                   
-                   
-                   
-                   
-                   
-              
-               
-                 
-               
-
 </section>
 
             </>)
