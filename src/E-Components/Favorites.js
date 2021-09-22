@@ -61,12 +61,10 @@ class Favorites extends React.Component {
       const { user } = this.props.auth0;
         return (
             <>
-            <h1 className="FavH1">This is Your Collection {user.name}</h1>
+            <h1 className="FavH1">Favorite Paintings</h1>
             <UserSelected
             favPaintData={this.state.favPaintArr}
-            deleteFavItemFun ={this. deleteFavItemFun}
-            
-            />
+            deleteFavItemFun ={this. deleteFavItemFun}/>
             </>
         )
     }
