@@ -36,7 +36,7 @@ class Postpainting extends React.Component {
   componentDidMount = () => {
     const { user } = this.props.auth0;
     axios
-      .get(`http://localhost:3010/getPainting?email=${user.email}`)
+      .get(`https://world-of-art-backend.herokuapp.com/getPainting?email=${user.email}`)
       .then(result => {
         this.setState({
           paintArr: result.data
@@ -62,7 +62,7 @@ class Postpainting extends React.Component {
       ownerEmail: email
     }
 
-    axios.post(`http://localhost:3010/addPainting`, obj)
+    axios.post(`https://world-of-art-backend.herokuapp.com/addPainting`, obj)
       .then(result => {
         this.setState({
           paintArr: result.data
@@ -90,7 +90,7 @@ class Postpainting extends React.Component {
     const { user } = this.props.auth0;
     const email = user.email;
     axios
-      .delete(`http://localhost:3010/deletePainting/${id}?email=${email}`)
+      .delete(`https://world-of-art-backend.herokuapp.com/deletePainting/${id}?email=${email}`)
       .then(result => {
         console.log(result.data);
         this.setState({
@@ -134,7 +134,7 @@ class Postpainting extends React.Component {
     }
     
 
-    axios.put(`http://localhost:3010/updatePainting/${this.state.idBook}`, obj)
+    axios.put(`https://world-of-art-backend.herokuapp.com/updatePainting/${this.state.idBook}`, obj)
       .then(result => {
         this.setState({
           paintArr: result.data,

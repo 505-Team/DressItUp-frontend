@@ -17,7 +17,6 @@
   height: 700px;
   max-height: 700px;
   object-fit: cover;
-  border-top-right-radius: 20px;
   /* border: solid 1px black; */
 }
 /* p ,h3 {
@@ -50,23 +49,29 @@
 .textcontenar p,
 .textcontenar h3 {
   margin: 35px;
-  text-align: justify;
+  text-align: left;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
   transition-duration: 0.3s;
 }
-
+.textcontenar h3{
+  font-size: 50px;
+}
+.textcontenar p{
+font-size: 20px;
+    font-weight: lighter;
+}
 
 
 #bigSpace{
   margin: auto;
   width: 100%;
-  min-height: 250px;
-  height: 250px;
+  min-height: 100px;
+  height: 100px;
 }
 
-.textcontenar p:hover,
+/* .textcontenar p:hover,
 .textcontenar h3:hover{
   transform: scale(1.1);
-}
+} */

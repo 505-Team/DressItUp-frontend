@@ -7,7 +7,6 @@ class ImageText extends React.Component {
     return (
       <>
         <div id="imageTextContainer">
-          <div class="strip"></div>
           <Row>
             <Col sm={4}>
               <div id='imageText_textContainer'>
@@ -29,7 +28,6 @@ class ImageText extends React.Component {
               />
             </Col>
           </Row>
-          <div class="strip"></div>
         </div>
       </>
     );

@@ -27,7 +27,7 @@ class CartItem extends React.Component {
     componentDidMount = () => {
         const { user } = this.props.auth0;
         axios
-            .get(`http://localhost:3010/getRequestedItems?email=${user.email}`)
+            .get(`https://world-of-art-backend.herokuapp.com/getRequestedItems?email=${user.email}`)
             .then(result => {
                 this.setState({
                     requestedItemsArray: result.data

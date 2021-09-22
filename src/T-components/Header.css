@@ -23,14 +23,14 @@ a:hover{
 
 .logoDesign{
  
-  width: 8%;
-  height: 8%;
-  margin-left: 20px;
+  width: 6.5%;
+  height: 6.5%;
+  margin-left: 30px;
 }
 
 Header{
   font-family: 'Josefin Sans', sans-serif;
-  position: fixed;
+  /* position: fixed; */
   font-weight: bold;
 }
 
@@ -43,4 +43,28 @@ Header{
 .headerNavButton{
   font-size: 20px;
   transition-duration: 0.3s;
+}
+
+
+.loginButtonstyle {
+  background-color: rgba(231, 149, 149, 0.952);
+  color: white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+  /* margin-top: 15%; */
+  font-size: 120%;
+}
+
+.loginButtonstyle:hover {
+  padding-left: 1%;
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(0, 0, 0);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  box-shadow: 1px 1px #f7f3f6, 2px 2px #ff7878, 3px 3px #f5a6e4;
 }

@@ -16,7 +16,7 @@ class CarsleBeging extends React.Component {
               alt="First slide"
               className="caruseImage"
             />
-            <Carousel.Caption></Carousel.Caption>
+            <Carousel.Caption className="caruselCaption_m">Best Art Works</Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
@@ -26,7 +26,7 @@ class CarsleBeging extends React.Component {
               className="caruseImage"
             />
 
-            <Carousel.Caption></Carousel.Caption>
+            <Carousel.Caption className="caruselCaption_m">Massive Library Of Art</Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
@@ -36,7 +36,7 @@ class CarsleBeging extends React.Component {
               className="caruseImage"
             />
 
-            <Carousel.Caption></Carousel.Caption>
+            <Carousel.Caption className="caruselCaption_m">Share your Beautiful Hand-Crafted Work</Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
@@ -46,7 +46,7 @@ class CarsleBeging extends React.Component {
               className="caruseImage"
             />
 
-            <Carousel.Caption></Carousel.Caption>
+            <Carousel.Caption className="caruselCaption_m">Easy to use Interface</Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </>
