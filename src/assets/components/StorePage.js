@@ -26,7 +26,7 @@ class StorePage extends React.Component {
   }
 
   loadPage=()=>{
-    const url = `http://localhost:3010/art?pageNumber=${this.state.pageNumber}`
+    const url = `https://world-of-art-backend.herokuapp.com/art?pageNumber=${this.state.pageNumber}`
     axios
       .get(url)
       .then(result => {
@@ -87,7 +87,7 @@ class StorePage extends React.Component {
 
   addPainting=(obj)=>{
     // const url = `https://ms-world-of-art-backend.herokuapp.com/favoritePainting`;
-    const url = `http://localhost:3010/addFavoritePainting`;
+    const url = `https://world-of-art-backend.herokuapp.com/addFavoritePainting`;
     this.setState({
       favoritedPaintingName: obj.title,
       showAddedToFavoriteModal: true
@@ -107,7 +107,7 @@ class StorePage extends React.Component {
   }
 
   addToRequests=(obj)=>{
-    const url = `http://localhost:3010/addRequestedPainting`;
+    const url = `https://world-of-art-backend.herokuapp.com/addRequestedPainting`;
 
     this.setState({
       requestedPaintingName: obj.title,

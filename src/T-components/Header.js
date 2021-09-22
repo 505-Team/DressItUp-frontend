@@ -27,7 +27,7 @@ class Header extends React.Component {
           variant="black"
         >
           <img className="logoDesign" src={artLogo} autoplay loop alt="logo" />
-
+          
           <Link to="/" id="link">
             <p className="headerNavButton"> Home</p>
           </Link>
@@ -55,7 +55,6 @@ class Header extends React.Component {
           {!isAuthenticated && <LoginButton style={{ color: "red" }} />}
 
           {isAuthenticated && <LogoutButton />}
-          {/* { isAuthenticated ? <LogoutButton /> : <LoginButton /> } */}
         </Navbar>
       </>
     );

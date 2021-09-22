@@ -10,7 +10,6 @@ class Paint extends React.Component {
           @import
           url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
         </style>
-        <div class='strip'></div>
         <Carousel className="carouselStyle" fade>
           <Carousel.Item className="itemCarousel">
             <img
@@ -99,7 +98,6 @@ class Paint extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <div class='strip'></div>
       </>
     );
   }

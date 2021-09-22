@@ -7,7 +7,6 @@ class NestedImage extends React.Component {
   render() {
     return (
       <>
-        <div class="strip"></div>
         <div id="nestedImageContainer">
           <Row>
             <Col sm={3}>

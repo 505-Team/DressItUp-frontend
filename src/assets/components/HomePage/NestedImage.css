@@ -37,16 +37,18 @@
     top: -47rem;
     margin-bottom: -400px;
 }
-#nestedImageText_musab h1, #nestedImageText_musab p{
-    transition-duration: 0.3s;
-}
-#nestedImageText_musab h1:hover, #nestedImageText_musab p:hover{
-    transform: scale(1.1);
-}
-#nestedImage:hover{
-    transform: scale(1.1);
+#nestedImageText_musab h1{
+    font-size: 50px;
 }
 
-#filerForm{
-    width: 100% !important;
+#nestedImageText_musab p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+/*
+#nestedImageText_musab h1:hover, #nestedImageText_musab p:hover{
+    transform: scale(1.1);
+} */
+#nestedImage:hover{
+    transform: scale(1.01);
 }

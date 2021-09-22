@@ -16,7 +16,7 @@ class GetStarted extends React.Component {
             <Card.Text>
               Have we caught your interests ? 
             </Card.Text>
-            <Button variant="primary" onClick={this.goToTop}>Get Started Now!</Button>
+            <Button variant="primary" onClick={this.goToTop} id="getStartedButton">Get Started Now!</Button>
           </Card.Body>}
           {this.props.isLoggedIn && <ShowOffCards/>}
         </Card>

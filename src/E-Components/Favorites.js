@@ -22,7 +22,7 @@ class Favorites extends React.Component {
         const email = user.email;
         
         axios
-        .get(`http://localhost:3010/getFavaddFavoritePainting?email=${user.email}`)
+        .get(`https://world-of-art-backend.herokuapp.com/getFavaddFavoritePainting?email=${user.email}`)
         .then( result =>{
           console.log(result.data);
 
@@ -42,7 +42,7 @@ class Favorites extends React.Component {
         const { user } = this.props.auth0;
         const email = user.email;
         axios
-          .delete(`http://localhost:3010/deleteFavItem/${id}?email=${email}`)
+          .delete(`https://world-of-art-backend.herokuapp.com/deleteFavItem/${id}?email=${email}`)
           .then(result => {
             console.log(result.data);
             this.setState({
