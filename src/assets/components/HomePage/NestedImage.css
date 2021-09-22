@@ -33,7 +33,7 @@
     position: relative;
     width: 35%;
     text-align: justify;
-    left: 29rem;
+    left: 26rem;
     top: -47rem;
     margin-bottom: -400px;
 }
@@ -45,4 +45,8 @@
 }
 #nestedImage:hover{
     transform: scale(1.1);
+}
+
+#filerForm{
+    width: 100% !important;
 }

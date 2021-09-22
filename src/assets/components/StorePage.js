@@ -152,7 +152,7 @@ class StorePage extends React.Component {
                   return val;
                 } else if (
                   val.place_of_origin != null &&(
-                  val.place_of_origin.toLowerCase().includes(this.state.searchTerm.toLowerCase()) || val.date_display.toLowerCase().includes(this.state.dateSearchTerm.toLowerCase()) ||val.title.toLowerCase().includes(this.state.nameSearchTerm.toLowerCase()))
+                  val.place_of_origin.toLowerCase().includes(this.state.searchTerm.toLowerCase()) && val.date_display.toLowerCase().includes(this.state.dateSearchTerm.toLowerCase()) && val.title.toLowerCase().includes(this.state.nameSearchTerm.toLowerCase()))
                 ) {
                   return val;
                 }

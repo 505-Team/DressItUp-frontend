@@ -201,3 +201,6 @@ color:whitesmoke;
   box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
 }
 
+.filterInput{
+  width: 80%;
+}
