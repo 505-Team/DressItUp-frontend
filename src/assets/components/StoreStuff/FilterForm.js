@@ -18,7 +18,7 @@ class FilterForm extends React.Component {
   render() {
     return (
       <>
-        <div id="filerFormContainer">
+        <div id="filterFormContainer">
           <Form onSubmit={this.submitFilter} id='filerForm'>
           <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Name of Painting</Form.Label>
@@ -32,7 +32,7 @@ class FilterForm extends React.Component {
               <Form.Label>Date of Creation</Form.Label>
               <Form.Control type="text" placeholder="1925, 1800 etc..." name="dateOfCreationText"/>
             </Form.Group>
-            <Button variant="primary" type="submit" className='reactBlueButton'>
+            <Button variant="primary" type="submit" className='reactBlueButtonFilter'>
               Filter
             </Button>
           </Form>

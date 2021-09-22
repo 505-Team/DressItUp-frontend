@@ -130,6 +130,8 @@ class StorePage extends React.Component {
   render() {
     return (
       <>
+      <div className="divBackground">
+      <p className="storeText">Explore the Finest Art.<br/> Here you can search, view and filter many pieces of Arts from around the Globe. We are committed to deliever Excllenece, also into connecting our Clients with many International Artists. </p>
       {console.log(this.props.userEmail)}
         <AddToFavoriteModal show={this.state.showAddedToFavoriteModal} 
         handleClose={this.closeAddedToFavoriteModal}
@@ -162,6 +164,7 @@ class StorePage extends React.Component {
               <PageSwitcher pageNumber={this.state.pageNumber} increasePage={this.increasePage} decreasePage={this.decreasePage}/>
           </Col>
         </Row>
+        </div>
         </div>
       </>
     );

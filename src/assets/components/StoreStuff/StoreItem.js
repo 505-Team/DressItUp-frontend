@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Card, ListGroupItem, ListGroup } from "react-bootstrap";
+import "./Store.css"
+
 
 class StoreItem extends React.Component {
   constructor(props) {
@@ -50,6 +52,7 @@ class StoreItem extends React.Component {
   render() {
     return (
       <>
+      <div className="cardBackground">
         <Card alignment='center' style={{ width: "18rem" }}>
           <Card.Img
             className="cardImage"
@@ -76,7 +79,7 @@ class StoreItem extends React.Component {
           <Card.Body>
             {this.state.isLoggedIn && (
               <Button
-              className='reactBlueButton'
+              className='reactBlueButtonFav'
                 onClick={
                   this.state.favorited ? this.unFavoriteThis : this.favoriteThis
                 }
@@ -93,10 +96,11 @@ class StoreItem extends React.Component {
           <Card.Body>
             {this.state.isLoggedIn && (
               <Button onClick={this.requestThis}
-              variant="primary" className='reactBlueButton'>Request</Button>
+              variant="primary" className='reactBlueButtonRequest'>Request</Button>
             )}
           </Card.Body>
         </Card>
+        </div>
       </>
     );
   }
