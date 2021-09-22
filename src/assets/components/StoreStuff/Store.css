@@ -26,7 +26,7 @@
  background-repeat: no-repeat;
   margin-left: 15px;
   margin-top: 25px;
-  width: 100%;
+  width: 84%;
   /* min-height: 35vh; */
   height: 100%;
   text-align: center;
@@ -34,17 +34,16 @@
 }
 
 .cardBackground{
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  width: 23.5%;
 }
 
 .cardBackground:hover{
-  transform: scale(1.1);
-  transition-delay:0.1s;
-  transition-duration: 0.7s;
-  box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+  transition-delay:0.05s;
+  transition-duration: 0.3s;
+  /* box-shadow: 5px 20px 30px rgba(0,0,0,0.2); */
   justify-content: space-between;
-
-
 }
 
 
@@ -59,8 +58,8 @@
   color:black;
   text-align: center;
   font-weight: bolder;
-  font-size:25px;
-  margin-top: 15px ;
+  font-size: 50px;
+  margin-top: 5%
   /* background-color: rgba(254,170,150,150); */
 
 }
@@ -76,10 +75,13 @@
   margin-top: -2px ; */
 }
 #cardsRow{
-  justify-content:space-between;
-  align-items: Top;
+  /* justify-content:space-between; */
+  /* align-items: Top; */
   margin: auto 25px;
-
+  display:flex;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
 .switchbody{
@@ -96,6 +98,12 @@
 }
 #storeItemsContainer{
   min-height: 100vh;
+}
+
+.storeItemCard{
+  margin: auto;
+  height: auto;
+  width: auto;
 }
 
 /* .reactBlueButton{

@@ -19,7 +19,6 @@ class Favorites extends React.Component {
     
       componentDidMount = () =>{
         const { user } = this.props.auth0;
-        const email = user.email;
         
         axios
         .get(`https://world-of-art-backend.herokuapp.com/getFavaddFavoritePainting?email=${user.email}`)

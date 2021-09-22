@@ -53,7 +53,7 @@ class StoreItem extends React.Component {
     return (
       <>
         <div className="cardBackground">
-          <Card alignment='center' style={{ width: "16rem" }}>
+          <Card alignment='center' className='storeItemCard'>
             <Card.Img
               className="cardImage"
               variant="top"

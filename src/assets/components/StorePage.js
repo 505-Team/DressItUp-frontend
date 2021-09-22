@@ -131,7 +131,7 @@ class StorePage extends React.Component {
     return (
       <>
       <div className="divBackground">
-      <p className="storeText">Explore the Finest Art.</p>
+      <p className="storeText">Explore the Finest Art</p>
       {console.log(this.props.userEmail)}
         <AddToFavoriteModal show={this.state.showAddedToFavoriteModal} 
         handleClose={this.closeAddedToFavoriteModal}
