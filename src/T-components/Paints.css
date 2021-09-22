@@ -1,0 +1,77 @@
+.carouselStyle {
+  /* max-width: 100%; */
+  /* margin-top: 2%; */
+  width: 100%;
+  /* height: 31.5rem; */
+}
+
+.itemCarousel {
+  /* height: 500px; */
+  background-color: whitesmoke;
+}
+
+.imgCarousel {
+  background-color: whitesmoke;
+  width: 50%;
+  float: left;
+  height: 700px;
+  max-height: 700px;
+  object-fit: cover;
+  /* border: solid 1px black; */
+}
+/* p ,h3 {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+
+  } */
+
+.captionStayl {
+  text-align: justify;
+  width: 100%;
+  height: 100% !important;
+  float: right;
+  margin-left: 37%;
+  margin-top: 6% !important;
+  padding-top: 8%;
+  margin-right: 9%;
+  /* background-color: coral; */
+
+  min-height: 500px !important;
+}
+
+.textcontenar {
+  width: 40%;
+  height: 100%;
+  
+}
+
+.textcontenar p,
+.textcontenar h3 {
+  margin: 35px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  transition-duration: 0.3s;
+}
+.textcontenar h3{
+  font-size: 50px;
+}
+.textcontenar p{
+font-size: 20px;
+    font-weight: lighter;
+}
+
+
+#bigSpace{
+  margin: auto;
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+}
+
+/* .textcontenar p:hover,
+.textcontenar h3:hover{
+  transform: scale(1.1);
+} */

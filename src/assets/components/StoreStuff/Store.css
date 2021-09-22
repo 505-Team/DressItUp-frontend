@@ -1,0 +1,219 @@
+#switcherContainer {
+  width: 100%;
+  padding: 25px;
+  margin: 50px auto;
+}
+.scroll {
+  max-height: 150px;
+  height:  150px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.cardImage{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: auto ;
+}
+
+
+#filterFormContainer{
+  /* background-color: rgba(0, 0, 0, 0.616); */
+  background-image: url(https://images.unsplash.com/photo-1613746203812-717e6e5db3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80);
+  /* background-size:cover; */
+  /* background-position: center ; */
+ background-repeat: no-repeat;
+  margin-left: 15px;
+  margin-top: 25px;
+  width: 100%;
+  /* min-height: 35vh; */
+  height: 100%;
+  text-align: center;
+  
+}
+
+.cardBackground{
+  background-color: whitesmoke;
+}
+
+.cardBackground:hover{
+  transform: scale(1.1);
+  transition-delay:0.1s;
+  transition-duration: 0.7s;
+  box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  justify-content: space-between;
+
+
+}
+
+
+.mb-3{
+  color:whitesmoke;
+
+}
+
+
+
+.storeText{
+  color:black;
+  text-align: center;
+  font-weight: bolder;
+  font-size:25px;
+  margin-top: 15px ;
+  /* background-color: rgba(254,170,150,150); */
+
+}
+
+.divBackground{
+  background-color: whitesmoke;
+}
+
+#filerForm{
+  width: 100%;
+  padding: 15px;
+  /* margin-left: 5px;
+  margin-top: -2px ; */
+}
+#cardsRow{
+  justify-content:space-between;
+  align-items: Top;
+  margin: auto 25px;
+
+}
+
+.switchbody{
+  background-color: rgba(236, 160, 207, 0.397);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#storeContainer{
+  min-height: 100vh !important;
+  padding: 25px;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+#storeItemsContainer{
+  min-height: 100vh;
+}
+
+/* .reactBlueButton{
+  background-color: rgba(254,170,150,255);
+  border-color: black;
+}
+
+.reactBlueButton:hover{
+  background-color: rgba(254,170,150,255) 
+  background-color black;
+} */
+
+/* .reactBlueButton:focus{
+  background-color: black;
+  border-color: solid 1px black;
+} */
+
+/* .reactSecondaryButton{
+  border-color: black;
+  color: black
+} */
+/* .reactSecondaryButton:hover{
+  border-color: black;
+  background-color: black;
+} */
+
+
+
+.reactBlueButton{
+  background-color: rgb(0, 0, 0);
+  color:  white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+      float: right;
+  }
+
+.reactBlueButton:hover{
+   
+      transition: all .2s ease-in-out;
+      background-color: rgba(254,170,150,255);
+      -webkit-transform: scale(.9);
+      -ms-transform: scale(.9);
+      transform: scale(.9);
+      box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+}
+
+.reactSecondaryButton{
+  background-color: rgb(0, 0, 0);
+  color:  white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+      float: left;
+     
+}
+
+.reactSecondaryButton:hover{
+  transition: all .2s ease-in-out;
+  background-color: rgba(254,170,150,255);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+}
+
+.reactBlueButtonFilter{
+  background-color: rgb(0, 0, 0);
+  color:  white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+  float:right
+  
+}
+
+.reactBlueButtonFilter:hover{
+  transition: all .2s ease-in-out;
+  background-color: rgba(254,170,150,255);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+}
+
+.reactBlueButtonRequest{
+  background-color: rgb(0, 0, 0);
+  color:  white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+  float:center;
+width: 68%;
+}
+
+.reactBlueButtonRequest:hover{
+  transition: all .2s ease-in-out;
+  background-color: rgba(254,170,150,255);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+}
+
+.reactBlueButtonFav{
+  background-color: rgb(0, 0, 0);
+  color:  white;
+  border: rgba(0, 0, 255, 0);
+  border-radius: 9px;
+  float:center;
+
+}
+
+.reactBlueButtonFav:hover{
+  transition: all .2s ease-in-out;
+  background-color: rgba(254,170,150,255);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+}
+
+.filterInput{
+  width: 100%;
+}

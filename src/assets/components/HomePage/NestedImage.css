@@ -1,0 +1,54 @@
+#nestedImageContainer{
+    width: 90%;
+    /* min-height: 800px; */
+    margin: auto;
+    /* padding-top: 150px; */
+}
+
+
+#nestedImageFirstDiv{
+    background-color: whitesmoke;
+    height: 800px;
+    width: 100%;
+}
+
+#nestedImageSecondDiv{
+    background: rgb(100, 100, 100, 0.2);
+    height: 800px;
+    width: 100%
+}
+
+#nestedImage{
+    position: relative;
+    object-fit: cover;
+    width: 50%;
+    height: 600px;
+    bottom: 50rem;
+    left: 8rem;
+    transition-duration: 0.3s;
+    margin-bottom: -700px;
+}
+#nestedImageText_musab{
+    margin: auto;
+    position: relative;
+    width: 35%;
+    text-align: justify;
+    left: 26rem;
+    top: -47rem;
+    margin-bottom: -400px;
+}
+#nestedImageText_musab h1{
+    font-size: 50px;
+}
+
+#nestedImageText_musab p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+/*
+#nestedImageText_musab h1:hover, #nestedImageText_musab p:hover{
+    transform: scale(1.1);
+} */
+#nestedImage:hover{
+    transform: scale(1.01);
+}
