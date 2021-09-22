@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
+import artLogo from "../assets/artLogo/World Of Art.gif";
+
 
 // import Navbar from 'react-bootstrap/Navbar';
 
@@ -55,30 +57,35 @@ class Footer extends React.Component {
                   width="40" height="40" alt="Qries" />
                 <i className="fab fa-github"></i>
               </a>
+
             </div>
+
             {/* <!-- Right --> */}
           </section>
           {/* <!-- Section: Social media --> */}
 
           {/* <!-- Section: Links  --> */}
           <section className="">
+
             <div className="container text-center text-md-start mt-5">
               {/* <!-- Grid row --> */}
+              <img className="logoDesign" src={artLogo} autoplay loop alt="logo" />
+
               <div className="row mt-3">
                 {/* <!-- Grid column --> */}
                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   {/* <!-- Content --> */}
-                  <h6 className="text-uppercase fw-bold mb-4">
-                    <i className="fas fa-gem me-3"></i>World of Art
-                  </h6>
+                  
                   <p>
                     We are committed to deliever the excellence of paintings and Art wroks.
                   </p>
+                  
                 </div>
                 {/* <!-- Grid column --> */}
 
                 {/* <!-- Grid column --> */}
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
                   {/* <!-- Links --> */}
                   <h6 className="text-uppercase fw-bold mb-4">
                     Products

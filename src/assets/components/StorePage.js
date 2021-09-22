@@ -131,7 +131,7 @@ class StorePage extends React.Component {
     return (
       <>
       <div className="divBackground">
-      <p className="storeText">Explore the Finest Art.<br/> Here you can search, view and filter many pieces of Arts from around the Globe. We are committed to deliever Excllenece, also into connecting our Clients with many International Artists. </p>
+      <p className="storeText">Explore the Finest Art.</p>
       {console.log(this.props.userEmail)}
         <AddToFavoriteModal show={this.state.showAddedToFavoriteModal} 
         handleClose={this.closeAddedToFavoriteModal}
