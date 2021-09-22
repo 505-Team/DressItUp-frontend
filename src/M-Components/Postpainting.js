@@ -9,6 +9,7 @@ import './Postpainting.css';
 import Button from 'react-bootstrap/Button';
 import Modelpaint from './Modelpaint';
 import UpdatePaint from './UpdatePaint';
+import CartItem from '../T-components/CartItem';
 
 
 

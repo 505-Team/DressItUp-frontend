@@ -27,24 +27,22 @@ class CartItem extends React.Component {
     componentDidMount = () => {
         const { user } = this.props.auth0;
         axios
-          .get(`http://localhost:3010/getRequestedItems?email=${user.email}`)
-          .then(result => {
-            this.setState({
-                requestedItemsArray: result.data
+            .get(`http://localhost:3010/getRequestedItems?email=${user.email}`)
+            .then(result => {
+                this.setState({
+                    requestedItemsArray: result.data
+                })
             })
-          })
-          .catch(err => {
-            console.log('error');
-          })
-      }
+            .catch(err => {
+                console.log('error');
+            })
+    }
 
     showPurchaseModal = () => {
         this.setState({
             showModal: true,
 
         })
-
-
     }
 
     close = () => {
@@ -53,7 +51,7 @@ class CartItem extends React.Component {
         })
     }
 
-    alertHandler=()=>{
+    alertHandler = () => {
 
         // alert('thank you');
         this.setState({
@@ -61,44 +59,103 @@ class CartItem extends React.Component {
         })
     }
 
+    removeHandler = () => {
+
+    }
+
 
 
     render() {
 
         return (
+            <div className="requestPage">
+                <br></br>
+                <p className="purchasePargragh"> Hello dear customer , we are honored to deal with you.
+                    Our goal is to serve customers and provide the best ways to cooperate and obtain your satisfaction.
+                    Please confirm the purchase and enter the required information to contact you immediately. </p>
 
-            <>
-                <Row Row xs={1} md={3} className="g-4">
+
+                <Row Row xs={1} md={3} >
 
                     {this.state.requestedItemsArray.map(item => {
                         return (
-                            <Card style={{ width: '15rem' }}>
-                                <Card.Img className='purchasingCard' variant="top" src={item.image_url} />
-                                <Card.Body>
-                                    <Card.Title> Title: {item.title} </Card.Title>
-                                    <Card.Text>
-                                        Date of Display: {item.date_display}
-                                        <br></br>
-                                        Artist Info: {item.artist_display};
-                                        <br></br>
-                                        <div className='secondScroll'>
-                                        Painting Provenance: {item.provenance_text};
-                                        <br></br>
-                                        Origin Place: {item.place_of_origin};
-                                        <br></br>
-                                        Medium Material: {item.medium_display};
-                                        <br></br>
-                                        Fiscal Year: {item.fiscal_year};
-                                        <br></br>
-                                        Colorfulness: {item.colorfulness};
+
+                            <div className="wrapper">
+                                <div className="container">
+                                    <div className="top">
+                                        <img style={{ width: '100%', height: '200px', objectFit: 'cover' }} src={item.image_url} />
+                                    </div>
+                                    <div className="bottom">
+                                        <div className="left">
+                                            <div className="details">
+                                                <h1>Title: {item.title}</h1>
+                                                {/* <p></p> */}
+                                            </div>
+                                            {/* <div className="buy"><i className="material-icons">add_shopping_cart</i></div>
                                         </div>
-                                        
-                                    </Card.Text>
-                                    <Button onClick={this.showPurchaseModal} variant="primary">Confirm Purchase</Button>
-                                </Card.Body>
-                            </Card>
+                                        <div className="right">
+                                            <div className="done"><i className="material-icons">done</i></div>
+                                            <div className="details">
+                                                <h1>Chair</h1>
+                                                <p>Added to your cart</p>
+                                            </div>
+                                            <div className="remove"><i className="material-icons">clear</i></div> */}
+                                        </div>
+                                    </div>
+                                    <br></br>
+                                    <Button className="purRemButton" onClick={this.showPurchaseModal} variant="primary">Confirm Request</Button>
+                                    <br></br>
+
+                                    <Button className="purRemButton" onClick={() => this.props.removePainting(item._id)} variant="primary"> Remove </Button>
+                                </div>
+                                <div className="inside">
+                                    <div className="icon"><i className="material-icons">(info)</i></div>
+                                    <div className="contents">
+                                        <table>
+                                            <tr>
+                                                <th>Paint Details</th>
+                                            </tr>
+                                            <br></br>
+                                            <tr>
+                                                <td className='secondScroll'> {item.provenance_text}</td>
+                                            </tr>
+                                            <br></br>
+
+                                            <tr className="dateInfo">
+                                                <th> Date of Display: {item.date_display}</th>
+                                                <th></th>
+                                            </tr>
+                                            <br></br>
+                                            <tr className="originInfo">
+                                                <td> Origin Place: {item.place_of_origin}</td>
+                                                <td></td>
+                                            </tr>
+                                            <br></br>
+                                            <tr className="artistInfo">
+                                                <th >Artist Info: {item.artist_display}</th>
+                                                <th></th>
+                                            </tr>
+                                            {/* <tr>
+                                                <td>200mm</td>
+                                                <td>200mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Something</th>
+                                                <th>Something</th>
+                                            </tr>
+                                            <tr>
+                                                <td>200mm</td>
+                                                <td>200mm</td>
+                                            </tr> */}
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         )
                     })}
+
                     <CartModal
                         show={this.state.showModal}
                         showPurchaseModal={this.showPurchaseModal}
@@ -106,7 +163,21 @@ class CartItem extends React.Component {
                         alertHandler={this.alertHandler}
                     />
                 </Row>
-            </>
+
+
+
+
+
+
+
+
+
+
+
+                <div id='bigSpace'></div>
+
+            </div>
+
         )
     }
 }
