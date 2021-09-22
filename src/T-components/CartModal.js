@@ -47,10 +47,10 @@ class purchaseModal extends React.Component {
                                 <Form.Control placeholder="1234 Main St" />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formGridAddress2">
+                            {/* <Form.Group className="mb-3" controlId="formGridAddress2">
                                 <Form.Label>Credit Card Number</Form.Label>
                                 <Form.Control placeholder="Enter card number" />
-                            </Form.Group>
+                            </Form.Group> */}
 
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridCity">
