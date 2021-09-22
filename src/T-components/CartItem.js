@@ -70,10 +70,10 @@ class CartItem extends React.Component {
         return (
             <div className="requestPage">
                 <br></br>
-                <h1 className="headerRequest"> Request Paintings </h1>
+                <h1 className="headerRequest"> Requested Paintings </h1>
 
 
-                <Row Row xs={1} md={3} >
+                <Row Row xs={1} md={3} className='rowofitem'>
 
                     {this.state.requestedItemsArray.map(item => {
                         return (

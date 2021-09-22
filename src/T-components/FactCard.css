@@ -22,19 +22,19 @@
 }
 
 #row {
-    content: "";
+    /* content: "";
     clear: both;
     display: table;
     margin-bottom: 10%;
     /* position: relative; */
     /* margin: auto; */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; */
 
 }
 
 #row:hover .overlay1 {
 
-    height: 400%;
+    /* height: 400%; */
 
 
 

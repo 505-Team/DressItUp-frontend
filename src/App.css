@@ -51,3 +51,16 @@ body{
 .carousel-indicators{
   filter: invert(100%);
 }
+
+Button:active{
+  background-color: black !important;
+}
+
+Button:enabled{
+  background-color: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+}
+Button:focus{
+  background-color: black !important;
+}
