@@ -1,0 +1,26 @@
+#imageTextContainer{
+    width: 100%;
+    min-height: 500px;
+    height: 900px;
+    /* background-color: black; */
+    margin: 10% auto;
+    background-color: whitesmoke;
+}
+
+#imageTextImage{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+#imageText_textContainer{
+    margin: 50px auto;
+    width: 70%;
+    
+}
+#imageText_textContainer h1,#imageText_textContainer p{
+    transition-duration: 0.3s;
+}
+#imageText_textContainer h1:hover,#imageText_textContainer p:hover{
+    transform: scale(1.1);
+}

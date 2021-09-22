@@ -4,10 +4,9 @@ import Header from './T-components/Header';
 import Footer from './T-components/Footer';
 // import Login from './T-components/Login';
 import CarsleBeging from "./CarsleBeging";
-
-
+import ImageText from './assets/components/HomePage/ImageText'
 import { withAuth0 } from '@auth0/auth0-react';
-
+import Paint from './T-components/Paint'
 import PostPainting from './M-Components/Postpainting';
 import StorePage from './assets/components/StorePage';
 import Aboutus from './E-Components/Aboutus';
@@ -20,10 +19,11 @@ import {
   Route
 } from "react-router-dom";
 // import LoginButton from './T-components/LoginButton';
-import FactCard from './T-components/FactCard';
+// import FactCard from './T-components/FactCard';
 import CartItem from './T-components/CartItem';
 // import Card from './T-components/Card'
-
+import NestedImage from './assets/components/HomePage/NestedImage';
+import GetStarted from './assets/components/HomePage/GetStarted'
 class App extends React.Component {
 
   render() {
@@ -37,6 +37,7 @@ class App extends React.Component {
         <Router>
           {/* <IsLoadingAndError> */}
           <Header />
+          <div id="mainSwitch">
           <Switch >
             <div>
               <Route exact path="/">
@@ -44,9 +45,17 @@ class App extends React.Component {
              
                 <div id="topCaruselContainer">
                <CarsleBeging/>
+               <div class='strip'></div>
                </div>
-                {/* <Paint /> */}
-                <FactCard />
+                {/* <FactCard /> */}
+                <div id='bigSpace'></div>
+                <NestedImage/>
+                <div id='bigSpace'></div>
+                <Paint/>
+                <ImageText/>
+                {isAuthenticated && <GetStarted isLoggedIn={isAuthenticated ? true : false}/>}
+                {!isAuthenticated && <GetStarted isLoggedIn={isAuthenticated ? true : false}/>}
+                <div id='bigSpace'></div>
               </Route>
               
               <Route exact path="/Favorites">
@@ -71,6 +80,7 @@ class App extends React.Component {
               </Route>
             </div>
           </Switch>
+          </div>
           <Footer />
           {/* </IsLoadingAndError> */}
         </Router>

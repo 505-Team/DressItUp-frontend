@@ -39,3 +39,8 @@ Header{
   border-bottom: solid rgba(254,170,150,255);
   padding-bottom: 10px;
 }
+
+.headerNavButton{
+  font-size: 20px;
+  transition-duration: 0.3s;
+}

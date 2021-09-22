@@ -10,6 +10,7 @@ class Paint extends React.Component {
           @import
           url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
         </style>
+        <div class='strip'></div>
         <Carousel className="carouselStyle" fade>
           <Carousel.Item className="itemCarousel">
             <img
@@ -32,7 +33,7 @@ class Paint extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="itemCarousel">
             <img
               className="imgCarousel"
               src="https://www.salvador-dali.org/media/upload/cataleg_pintura/ALTA/0265.jpg"
@@ -54,7 +55,7 @@ class Paint extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="itemCarousel">
             <img
               className="imgCarousel"
               src="https://media.timeout.com/images/105222673/750/562/image.jpg"
@@ -74,7 +75,7 @@ class Paint extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
 
-          <Carousel.Item>
+          <Carousel.Item className="itemCarousel">
             <img
               className="imgCarousel"
               src="https://media.timeout.com/images/105293264/750/562/image.jpg"
@@ -98,6 +99,7 @@ class Paint extends React.Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <div class='strip'></div>
       </>
     );
   }

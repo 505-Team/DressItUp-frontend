@@ -9,52 +9,44 @@ class CarsleBeging extends React.Component {
           @import
           url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
         </style>
-        <Carousel id="topCarusel" fade >
+        <Carousel id="topCarusel" fade>
           <Carousel.Item>
             <img
-              src="https://m.media-amazon.com/images/I/91TN+nabSWL._AC_SL1500_.jpg"
+              src="https://images.wallpaperscraft.com/image/single/silhouette_art_sky_129925_1920x1080.jpg"
               alt="First slide"
-              className='caruseImage'
+              className="caruseImage"
             />
-            <Carousel.Caption>
-
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
             <img
-              src="https://cdn.pixabay.com/photo/2014/12/09/21/01/still-life-562357_960_720.jpg"
+              src="https://images.wallpaperscraft.com/image/single/child_river_dreams_127495_1920x1080.jpg"
               alt="Second slide"
-              className='caruseImage'
+              className="caruseImage"
             />
 
-            <Carousel.Caption>
-
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
             <img
-              src="https://cdn.pixabay.com/photo/2013/02/14/03/51/painting-81504_960_720.jpg"
+              src="https://images.wallpaperscraft.com/image/single/river_home_art_128746_1920x1080.jpg"
               alt="Third slide"
-              className='caruseImage'
+              className="caruseImage"
             />
 
-            <Carousel.Caption>
-              
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item>
             <img
-              src="https://images.unsplash.com/photo-1579541764764-6401d4100dd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+              src="https://images.wallpaperscraft.com/image/single/wolf_silhouette_hills_130119_1920x1080.jpg"
               alt="Fourth slide"
-              className='caruseImage'
+              className="caruseImage"
             />
 
-            <Carousel.Caption>
- 
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </>
