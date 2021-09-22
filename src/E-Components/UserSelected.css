@@ -1,76 +1,232 @@
-.favText {
-    max-height: 150px;
-    height:  150px;
-    overflow-y: auto;
-    /* width: 100%; */
-    font-weight: bolder;
-}
-  
-  .favImg{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
 
-    margin-bottom: 9%;
-
-    /* float: left; */
-    /* padding: 3px; */
-    /* margin-left: 66px;
-    display: block; */
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
-    
-
-}
-  
-
-  .RowOFFav{
-/* margin-left: 2%; */
-/* content: "";
-    clear: both;
-    display: table; */
-    margin-bottom: 10%;
-    /* position: relative; */
-    /* margin: auto; */
-    font-weight: bolder;
-    font-family: 'Josefin Sans', sans-serif;
-
-
-}
-
-.favRemove{
-    background-color: rgb(0, 0, 0);
-    color:  white;
-    border: rgba(0, 0, 255, 0);
-    
-    
-    border-radius: 9px;
-        /* background: linear-gradient(to right, rgba(22, 20, 15, 0.877)40%, rgba(4, 76, 112, 0.911)); */
-        /* padding-top: 20px;
-    padding-left: 16px; */
-        /* height: 55px; */
-        /* width: 180px; */
-        content: "";
-        display: table;
-        clear: both;
-        /* margin-left: 500px;
-        margin-top: 20px; */
-    
-    }
-  
-.favRemove:hover{
-     
-        transition: all .2s ease-in-out;
-        background-color: #886c88c7;
-        -webkit-transform: scale(.9);
-        -ms-transform: scale(.9);
-        transform: scale(.9);
-        box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
-}
 
 .FavH1{
+    text-align: center;
+    font-size: 3rem;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 4%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 
 
 }
+
+.titleInFav{
+padding-top: 7%;
+
+}
+
+
+.deleteFavCard2{
+    background-color: rgba(231, 149, 149, 0.952);
+    color:  white;
+    border: rgba(0, 0, 255, 0);
+    border-radius: 9px;
+      content: "";
+        display: table;
+        clear: both;
+        margin: auto;
+        margin-top: 15%;
+        font-size: 120%;
+  }
+  
+   .deleteFavCard2:hover{
+       padding-left: 10%;
+      transition: all .2s ease-in-out;
+      background-color: rgb(0, 0, 0);
+      -webkit-transform: scale(.9);
+      -ms-transform: scale(.9);
+      transform: scale(.9);
+      box-shadow: 1px 1px #f7f3f6, 2px 2px #FF7878, 3px 3px #f5a6e4;
+  
+  }
+
+
+
+
+
+html, body {
+    background:whitesmoke;
+    font-family: sans-serif;
+    /* padding-left: 3%; */
+    /* padding-right: 3%; */
+  
+  }
+  
+  .wrapper2 {
+    width: 300px;
+    height: 450px;
+    background: rgba(90, 79, 86, 0.151);
+    /* margin: 0%; */
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 3.5%;
+  /* padding-left: 0%; */
+  
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(1.0);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+  .wrapper2:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  .wrapper2 .container2 {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper2 .container2 .top2 {
+    height: 50%;
+    width: 100%;
+    /* background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg) no-repeat center center; */
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    padding-top: 5%;
+    /* padding: 0% !important; */
+    margin-top: 4%;
+
+  }
+  
+  .wrapper2 .container2 .bottom2 {
+    width: 100%;
+    height: 20%;
+    transition: transform 0.5s;
+  }
+  
+  /* .wrapper .container .bottom.clicked {
+    transform: translateX(-50%);
+  } */
+  
+  .wrapper2 .container2 .bottom2 h1 {
+    font-size: 100%;
+    width: 200%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .wrapper .container .bottom p {
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .wrapper2 .container2 .bottom2 .left2 {
+    width: 100%;
+    background: #f4f4f4;
+    position: relative;
+    float: left;
+    max-height: 150px;
+    height:  100px;
+    overflow-y: auto;
+    margin-top: 10%;
+  }
+  .wrapper2 .container2 .bottom2 .left2 .details2 {
+    padding: 20px;
+    /* float:none; */
+    text-align: center;
+    width: calc(70% - 40px);
+    
+    
+  }
+
+
+  
+.wrapper2 .inside2 {
+    z-index: 9;
+    background: rgba(231, 149, 149, 0.952);
+    width: 140px;
+    /* height: 140px; */
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+    max-height: 450px;
+    height:  125px;
+    overflow-y: auto;
+  }
+  .wrapper2 .inside2 .icon2 {
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    font-size: 130%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+   
+  }
+  .wrapper2 .inside2:hover {
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+  }
+  .wrapper2 .inside2:hover .icon2 {
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+  }
+  .wrapper2 .inside2:hover .contents2 {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
+  .wrapper2 .inside2 .contents2 {
+    width: 100%;
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s, transform 0.8s;
+  }
+  .wrapper2 .inside2 .contents2 table {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapper2 .inside2 .contents2 h1, .wrapper2 .inside2 .contents2 p, .wrapper2 .inside2 .contents2 table {
+    width: 100%;
+    color: rgb(0, 0, 0);
+  }
+  .wrapper2 .inside2 .contents2 p {
+    font-size: 13px;
+  }
+  
+  .wrapper2 .inside2 .contents2 table .secondScroll2{
+    max-height: 150px;
+    height:  100px;
+    overflow-y: auto;
+    width: 150%;
+    font-size: 0.75rem ;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: justify ;
+    padding-right: 5%;
+    padding-left: 5%;
+  
+  }
+  
+  .wrapper2 .inside2 .contents2 table .dateInfo2{
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;
+    font-size: 0.8rem ;
+  }
+  
+  .wrapper2 .inside2 .contents2 table .originInfo2{
+    font-size: 0.8rem ;
+    width: 100%;
+  }
+  
+  .wrapper2 .inside2 .contents2 table .artistInfo2{
+   margin-top: 2%;
+    /* background-color: rgb(255, 255, 255); */
+    font-size: 0.8rem ;
+    width: 100%;
+  
+  }

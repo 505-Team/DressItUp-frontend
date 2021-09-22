@@ -156,13 +156,13 @@ class Postpainting extends React.Component {
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
 </style>
 
-        <h1 className='hinpostpainting'>Hello {user.name}</h1>
-        <p className='pinpostpainting'>
-        Uploald your artwork 🎨 </p>
+        <h1 className='hinpostpainting'>Artwork</h1>
+        {/* <p className='pinpostpainting'>
+        Uploald your artwork 🎨 </p> */}
 
 
 
-        <Button className='addbuttonstayle' onClick={this.handelShowModel}>Upload</Button>
+        <Button className='addbuttonstayle' onClick={this.handelShowModel}>Upload Your Painting</Button>
 
         <PaintingItem
           // item = {item}

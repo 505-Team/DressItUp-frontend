@@ -70,9 +70,7 @@ class CartItem extends React.Component {
         return (
             <div className="requestPage">
                 <br></br>
-                <p className="purchasePargragh"> Hello dear customer , we are honored to deal with you.
-                    Our goal is to serve customers and provide the best ways to cooperate and obtain your satisfaction.
-                    Please confirm the purchase and enter the required information to contact you immediately. </p>
+                <h1 className="headerRequest"> Request Paintings </h1>
 
 
                 <Row Row xs={1} md={3} >
@@ -109,7 +107,7 @@ class CartItem extends React.Component {
                                     <Button className="purRemButton" onClick={() => this.props.removePainting(item._id)} variant="primary"> Remove </Button>
                                 </div>
                                 <div className="inside">
-                                    <div className="icon"><i className="material-icons">(info)</i></div>
+                                    <div className="icon"><i className="material-icons">i</i></div>
                                     <div className="contents">
                                         <table>
                                             <tr>
